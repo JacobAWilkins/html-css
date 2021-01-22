@@ -36,10 +36,12 @@
 body {
   background-color: #F4EDEA;
   color: #333;
+  font-family: Montserrat, sans-serif;
 }
 
 h1 {
   color: #333;
+  font-family: Montserrat, sans-serif;
 }
 
 /* Navbar */
@@ -62,6 +64,7 @@ li.nav-item a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: Montserrat,sans-serif;
 }
 
 li.nav-item a:hover {
@@ -80,6 +83,7 @@ div.profile img {
 div.profile h2 {
   text-align: center;
   color: #333;
+  font-family: Montserrat,sans-serif;
 }
 
 .profile { grid-area: profile }
@@ -97,6 +101,7 @@ input[type=text], textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  font-family: Montserrat,sans-serif;
 }
 
 input[type=submit] {
@@ -106,6 +111,7 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-family: Montserrat,sans-serif;
 }
 
 input[type=submit]:hover {
@@ -115,8 +121,7 @@ input[type=submit]:hover {
 .container {
   border-radius: 5px;
   padding: 20px;
-  border-style: solid;
-  border-color: #333;
+  border: 4px solid #333;
 }
 
 /* Gallery */
@@ -129,7 +134,7 @@ div.gallery {
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
+  border: 1px solid #333;
 }
 
 div.gallery img {
@@ -140,4 +145,18 @@ div.gallery img {
 div.desc {
   padding: 5px;
   text-align: center;
+  color: #333;
+  font-family: Montserrat,sans-serif;
+}
+
+/* Footer */
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #333;
+  color: white;
 }
