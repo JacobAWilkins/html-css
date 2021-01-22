@@ -1,13 +1,45 @@
 @media screen and (max-width: 500px) {
-
+  .home {
+    display: grid;
+    grid-template-areas:
+      'profile'
+      'bio'
+      'hobbies';
+    grid-gap: 10px;
+    padding: 10px;
+  }
 }
 
-@media screen and (max-width: 800px) {
-
+@media screen and (min-width: 500px) and (max-width: 800) {
+  .home {
+    display: grid;
+    grid-template-areas:
+      'profile bio bio'
+      'profile hobbies hobbies';
+    grid-gap: 10px;
+    padding: 10px;
+  }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
+  .home {
+    display: grid;
+    grid-template-areas:
+      'profile bio bio'
+      'profile hobbies hobbies';
+    grid-gap: 10px;
+    padding: 10px;
+  }
   
+}
+
+body {
+  background-color: #F4EDEA;
+  color: #333;
+}
+
+h1 {
+  color: #333;
 }
 
 /* Navbar */
@@ -39,10 +71,20 @@ li.nav-item a:hover {
 /* Home */
 
 div.profile img {
-  width: 20%;
+  width: 100%;
   height: auto;
   margin-top: 6px;
+  border-radius: 50%;
 }
+
+div.profile h2 {
+  text-align: center;
+  color: #333;
+}
+
+.profile { grid-area: profile }
+.bio { grid-area: bio }
+.hobbies { grid-area: hobbies }
 
 /* Contact */
 
@@ -72,8 +114,9 @@ input[type=submit]:hover {
 
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
   padding: 20px;
+  border-style: solid;
+  border-color: #333;
 }
 
 /* Gallery */
