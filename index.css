@@ -1,3 +1,4 @@
+/* Mobile */
 @media screen and (max-width: 500px) {
   .home {
     display: grid;
@@ -10,23 +11,25 @@
   }
 }
 
+/* Tablet */
 @media screen and (min-width: 500px) and (max-width: 800) {
   .home {
     display: grid;
     grid-template-areas:
-      'profile bio bio'
-      'profile hobbies hobbies';
+      'profile bio bio bio'
+      'profile hobbies hobbies hobbies';
     grid-gap: 10px;
     padding: 10px;
   }
 }
 
+/* Desktop */
 @media screen and (min-width: 800px) {
   .home {
     display: grid;
     grid-template-areas:
-      'profile bio bio'
-      'profile hobbies hobbies';
+      'profile bio bio bio'
+      'profile hobbies hobbies hobbies';
     grid-gap: 10px;
     padding: 10px;
   }
@@ -39,7 +42,7 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
-h1 {
+h1, h2 {
   color: #333;
   font-family: Montserrat, sans-serif;
 }
@@ -64,7 +67,7 @@ li.nav-item a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: Montserrat,sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
 li.nav-item a:hover {
@@ -80,10 +83,14 @@ div.profile img {
   border-radius: 50%;
 }
 
-div.profile h2 {
+div.profile h1, h2 {
   text-align: center;
   color: #333;
-  font-family: Montserrat,sans-serif;
+  font-family: Montserrat, sans-serif;
+}
+
+div.profile h2 {
+  color: #808080
 }
 
 .profile { grid-area: profile }
@@ -146,7 +153,7 @@ div.desc {
   padding: 5px;
   text-align: center;
   color: #333;
-  font-family: Montserrat,sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
 /* Footer */
@@ -159,4 +166,5 @@ footer {
   text-align: center;
   background-color: #333;
   color: white;
+  font-family: Montserrat, sans-serif;
 }
